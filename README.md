@@ -16,17 +16,17 @@ make
 ```
 Using NW alignment mode.
 Reading queries...
-Read 1 queries, 112869120 residues total.
+Read 1 queries, 28765920 residues total.
 Reading target fasta file...
-Read target, 112869120 residues.
+Read target, 28765920 residues.
 
 Comparing queries to target...
 1/1
 Scores:
 <query number>: <score>, <num_locations>, [(<start_location_in_target>, <end_location_in_target>)]
-#0: 3  1  [ (0, 112869119) ]
+#0: 0  1  [ (0, 28765919) ]
 
-Cpu time of searching: 9.301629
+Cpu time of searching: 2.424440
 ```
 
 All credit goes to the developers of Edlib: https://github.com/Martinsos/edlib
