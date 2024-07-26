@@ -3,16 +3,30 @@ Calculate Edlib Edit Distance for sequence pairs in two FASTA files
 
 # Getting Started:
 ```
-git clone https://github.com/CMU-SAFARI/SneakySnake
-cd SneakySnake/SneakySnake && make
+git clone https://github.com/mealser/Edlib-2FASTA
+cd Edlib-2FASTA && make
 
-#./main [DebugMode] [KmerSize] [ReadLength] [IterationNo] [ReadRefFile] [# of reads] [# of threads] [EditThreshold]
-# Short sequences
-./main 0 100 100 100 ../Datasets/ERR240727_1_E2_30000Pairs.txt 30000 10 10
-# Long sequences
-./main 0 20500 100000 20500 ../Datasets/LongSequences_100K_PBSIM_10Pairs.txt 10 40 20000
+make clean
+make
+./main -l -m NW data1.FASTA data2.FASTA
 
 ```
+## Output
 
+```
+Using NW alignment mode.
+Reading queries...
+Read 1 queries, 112869120 residues total.
+Reading target fasta file...
+Read target, 112869120 residues.
+
+Comparing queries to target...
+1/1
+Scores:
+<query number>: <score>, <num_locations>, [(<start_location_in_target>, <end_location_in_target>)]
+#0: 3  1  [ (0, 112869119) ]
+
+Cpu time of searching: 9.301629
+```
 
 All credit goes to the developers of Edlib: https://github.com/Martinsos/edlib
