@@ -30,4 +30,5 @@ Cpu time of searching: 2.013799
 ```
 The edit distance provided by Edlin in the example above is 3, as shown the score field
 
+## Credit
 All credit goes to the developers of Edlib: https://github.com/Martinsos/edlib
